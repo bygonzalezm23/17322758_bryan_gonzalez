@@ -11,6 +11,3 @@ El que muestra la columna `cipher`, por ejemplo `TLS_AES_256_GCM_SHA384` (TLS 1.
 ### ¿Qué diferencia existe entre una conexión protegida con TLS y una conexión sin TLS? 
 Con TLS, el tráfico entre el cliente y PostgreSQL va cifrado: un observador de la red no puede leer consultas, resultados ni credenciales, se detecta si alguien los modifica y se puede verificar que el servidor es el legítimo. Sin TLS, todo viaja en texto legible, así que cualquiera que vea el tráfico puede leerlo o alterarlo, y no hay forma de comprobar la identidad del servidor.
 
-## Actividad 6
-
-El comando de psql, no se pudo ejecutar le doy los datos que tengo para conectarlo a mi servidor de postgre, sin embargo aparece un error.
