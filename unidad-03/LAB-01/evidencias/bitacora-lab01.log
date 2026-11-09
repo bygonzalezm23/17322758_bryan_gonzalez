@@ -1,0 +1,509 @@
+﻿2026-11-08 20:27:26 CST LOG:  empezando checkpoint: time
+
+2026-11-08 20:27:26 CST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.105 s, sync=0.002 s, total=0.111 s; archivos sincronizados=2, más largo=0.001 s, promedio=0.001 s; distancia=1 kB, estimación=2524 kB; lsn=0/230A750, lsn de redo=0/230A6F8
+
+2026-11-08 20:32:26.432 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 20:32:26.543 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.105 s, sync=0.002 s, total=0.112 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=4 kB, estimación=2272 kB; lsn=0/230BB38, lsn de redo=0/230BAE0
+
+2026-11-08 20:33:42.221 CST [43924] user=postgres db=bitacora app=pgAdmin 4 - CONN:78728 client=::1 LOG:  statement: ALTER SYSTEM SET log_connections = on;
+
+
+	
+
+2026-11-08 20:33:46.357 CST [43924] user=postgres db=bitacora app=pgAdmin 4 - CONN:78728 client=::1 LOG:  sentencia: ALTER SYSTEM SET log_disconnections = on;
+
+
+	
+
+2026-11-08 20:33:48.379 CST [43924] user=postgres db=bitacora app=pgAdmin 4 - CONN:78728 client=::1 LOG:  sentencia: ALTER SYSTEM SET log_line_prefix = '%m [%p] user=%u db=%d app=%a client=%h ';
+
+
+	
+
+2026-11-08 20:33:50.919 CST [43924] user=postgres db=bitacora app=pgAdmin 4 - CONN:78728 client=::1 LOG:  sentencia: ALTER SYSTEM SET log_statement = 'ddl';
+
+
+	
+
+2026-11-08 20:49:45.064 CST [42152] user=postgres db=bitacora app=psql client=127.0.0.1 ERROR:  error de sintaxis en o cerca de Â«psqlÂ» en carÃ¡cter 1
+
+2026-11-08 20:49:45.064 CST [42152] user=postgres db=bitacora app=psql client=127.0.0.1 SENTENCIA:  psql "postgresql://app_ventas:Yupi12@127.0.0.1/bitacora?application_name=app-ventas-web" -c "UPDATE clientes SET rfc = 'GAMA780912XXX' WHERE id = 3"
+
+	;
+
+2026-11-08 20:56:17.739 CST [39408] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=51627
+
+2026-11-08 20:56:17.749 CST [39408] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 20:56:17.749 CST [39408] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=pgAdmin 4 - CONN:3971936
+
+2026-11-08 20:56:41.754 CST [18308] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=52983
+
+2026-11-08 20:56:45.258 CST [40288] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=56644
+
+2026-11-08 20:56:45.269 CST [40288] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 20:56:45.269 CST [40288] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=bitacora nombre_de_aplicación=app-ventas-web
+
+2026-11-08 20:56:45.313 CST [40288] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.067 usuario=app_ventas base=bitacora host=127.0.0.1 port=56644
+
+2026-11-08 20:57:26.654 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 20:57:26.765 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.106 s, sync=0.001 s, total=0.112 s; archivos sincronizados=1, más largo=0.001 s, promedio=0.001 s; distancia=1 kB, estimación=2045 kB; lsn=0/230C070, lsn de redo=0/230C018
+
+2026-11-08 21:08:22.261 CST [39408] user=postgres db=bitacora app=pgAdmin 4 - CONN:3971936 client=::1 LOG:  statement: REVOKE UPDATE ON clientes FROM soporte_ana;
+
+
+	
+
+2026-11-08 21:08:25.271 CST [39408] user=postgres db=bitacora app=pgAdmin 4 - CONN:3971936 client=::1 LOG:  statement: GRANT UPDATE ON clientes TO app_ventas;
+
+
+	
+
+2026-11-08 21:08:27.187 CST [39408] user=postgres db=bitacora app=pgAdmin 4 - CONN:3971936 client=::1 LOG:  statement: ALTER TABLE clientes ADD COLUMN segmento VARCHAR(20);
+
+2026-11-08 21:08:44.112 CST [39408] user=postgres db=bitacora app=pgAdmin 4 - CONN:3971936 client=::1 LOG:  statement: CREATE ROLE rol_temporal LOGIN PASSWORD '<REDACTED>';
+
+
+	
+
+2026-11-08 21:08:52.316 CST [39408] user=postgres db=bitacora app=pgAdmin 4 - CONN:3971936 client=::1 LOG:  statement: DROP ROLE rol_temporal;
+
+2026-11-08 21:12:26.779 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 21:12:27.545 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 7 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.756 s, sync=0.004 s, total=0.767 s; archivos sincronizados=8, más largo=0.002 s, promedio=0.001 s; distancia=17 kB, estimación=1842 kB; lsn=0/23106E8, lsn de redo=0/2310658
+
+2026-11-08 21:14:31.616 CST [35908] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=62822
+
+2026-11-08 21:14:31.625 CST [35908] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 21:14:31.626 CST [35908] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=pgAdmin 4 - CONN:6447205
+
+2026-11-08 21:17:26.550 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 21:17:26.662 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.105 s, sync=0.002 s, total=0.112 s; archivos sincronizados=1, más largo=0.002 s, promedio=0.002 s; distancia=3 kB, estimación=1658 kB; lsn=0/2311598, lsn de redo=0/2311540
+
+2026-11-08 21:19:42.804 CST [22964] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=56975
+
+2026-11-08 21:19:45.788 CST [29132] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=61404
+
+2026-11-08 21:19:45.799 CST [29132] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 21:19:45.800 CST [29132] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=bitacora nombre_de_aplicación=app-ventas-web
+
+2026-11-08 21:19:45.805 CST [29132] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.029 usuario=app_ventas base=bitacora host=127.0.0.1 port=61404
+
+2026-11-08 21:22:26.676 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 21:22:26.898 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.210 s, sync=0.003 s, total=0.223 s; archivos sincronizados=3, más largo=0.002 s, promedio=0.001 s; distancia=2 kB, estimación=1493 kB; lsn=0/23120D0, lsn de redo=0/2312078
+
+2026-11-08 21:24:29.296 CST [35908] user=postgres db=bitacora app=pgAdmin 4 - CONN:6447205 client=::1 LOG:  statement: ALTER SYSTEM SET log_statement = 'mod';
+
+
+	
+
+2026-11-08 21:25:59.537 CST [38708] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=60106
+
+2026-11-08 21:26:02.731 CST [43336] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=62468
+
+2026-11-08 21:26:02.746 CST [43336] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 21:26:02.746 CST [43336] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=bitacora nombre_de_aplicación=app-ventas-web
+
+2026-11-08 21:26:02.752 CST [43336] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  sentencia: UPDATE clientes SET telefono = '6679990000' WHERE id = 3
+
+2026-11-08 21:26:02.820 CST [43336] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.105 usuario=app_ventas base=bitacora host=127.0.0.1 port=62468
+
+2026-11-08 21:27:26.855 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 21:27:26.966 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.105 s, sync=0.002 s, total=0.111 s; archivos sincronizados=2, más largo=0.001 s, promedio=0.001 s; distancia=1 kB, estimación=1344 kB; lsn=0/2312700, lsn de redo=0/23126A8
+
+2026-11-08 21:29:25.373 CST [15392] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=60077
+
+2026-11-08 21:29:30.732 CST [41956] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=55670
+
+2026-11-08 21:29:30.744 CST [41956] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 FATAL:  la autentificación password falló para el usuario «soporte_ana»
+
+2026-11-08 21:29:30.744 CST [41956] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 DETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+
+2026-11-08 21:29:32.840 CST [43120] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=54359
+
+2026-11-08 21:29:40.212 CST [43308] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=51942
+
+2026-11-08 21:29:40.223 CST [43308] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«soporte_ana» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 21:29:40.223 CST [43308] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=soporte_ana base_de_datos=bitacora nombre_de_aplicación=psql
+
+2026-11-08 21:29:40.227 CST [43308] user=soporte_ana db=bitacora app=psql client=127.0.0.1 LOG:  sentencia: DELETE FROM clientes WHERE id = 5
+
+2026-11-08 21:29:40.227 CST [43308] user=soporte_ana db=bitacora app=psql client=127.0.0.1 ERROR:  permiso denegado a la tabla clientes
+
+2026-11-08 21:29:40.227 CST [43308] user=soporte_ana db=bitacora app=psql client=127.0.0.1 SENTENCIA:  DELETE FROM clientes WHERE id = 5
+
+2026-11-08 21:29:40.228 CST [43308] user=soporte_ana db=bitacora app=psql client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.028 usuario=soporte_ana base=bitacora host=127.0.0.1 port=51942
+
+2026-11-08 21:30:06.034 CST [35908] user=postgres db=bitacora app=pgAdmin 4 - CONN:6447205 client=::1 LOG:  statement: DROP ROLE soporte_ana;
+
+2026-11-08 21:30:06.034 CST [35908] user=postgres db=bitacora app=pgAdmin 4 - CONN:6447205 client=::1 ERROR:  role "soporte_ana" cannot be dropped because some objects depend on it
+
+2026-11-08 21:30:06.034 CST [35908] user=postgres db=bitacora app=pgAdmin 4 - CONN:6447205 client=::1 DETAIL:  privileges for table clientes
+
+2026-11-08 21:30:06.034 CST [35908] user=postgres db=bitacora app=pgAdmin 4 - CONN:6447205 client=::1 STATEMENT:  DROP ROLE soporte_ana;
+
+2026-11-08 21:32:26.974 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 21:32:27.082 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.103 s, sync=0.001 s, total=0.109 s; archivos sincronizados=1, más largo=0.001 s, promedio=0.001 s; distancia=0 kB, estimación=1209 kB; lsn=0/2312A70, lsn de redo=0/2312A18
+
+2026-11-08 21:33:50.929 CST [30900] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=64169
+
+2026-11-08 21:33:54.346 CST [42576] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=64170
+
+2026-11-08 21:33:54.358 CST [42576] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«soporte_ana» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 21:33:54.358 CST [42576] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=soporte_ana base_de_datos=bitacora nombre_de_aplicación=reporte-mensual
+
+2026-11-08 21:35:24.409 CST [42576] user=soporte_ana db=bitacora app=reporte-mensual client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:01:30.074 usuario=soporte_ana base=bitacora host=127.0.0.1 port=64170
+
+2026-11-08 21:39:22.473 CST [43808] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=58599
+
+2026-11-08 21:39:25.745 CST [38536] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=64586
+
+2026-11-08 21:39:25.756 CST [38536] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«soporte_ana» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 21:39:25.756 CST [38536] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=soporte_ana base_de_datos=bitacora nombre_de_aplicación=reporte-mensual
+
+2026-11-08 21:40:55.797 CST [38536] user=soporte_ana db=bitacora app=reporte-mensual client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:01:30.063 usuario=soporte_ana base=bitacora host=127.0.0.1 port=64586
+
+2026-11-08 21:44:36.787 CST [35908] user=postgres db=bitacora app=pgAdmin 4 - CONN:6447205 client=::1 LOG:  statement: CREATE SCHEMA auditoria;
+
+2026-11-08 21:44:39.852 CST [35908] user=postgres db=bitacora app=pgAdmin 4 - CONN:6447205 client=::1 LOG:  statement: REVOKE ALL ON SCHEMA auditoria FROM PUBLIC;
+
+
+	
+
+2026-11-08 21:44:45.700 CST [35908] user=postgres db=bitacora app=pgAdmin 4 - CONN:6447205 client=::1 LOG:  statement: CREATE TABLE auditoria.cambios_clientes (
+
+
+	    id_evento        BIGSERIAL PRIMARY KEY,
+
+
+	    momento          TIMESTAMPTZ NOT NULL DEFAULT now(),
+
+
+	    usuario_sesion   TEXT        NOT NULL DEFAULT session_user,
+
+
+	    usuario_efectivo TEXT        NOT NULL DEFAULT current_user,
+
+
+	    aplicacion       TEXT        DEFAULT current_setting('application_name'),
+
+
+	    ip_cliente       INET        DEFAULT inet_client_addr(),
+
+
+	    operacion        TEXT        NOT NULL,
+
+
+	    id_cliente       BIGINT,
+
+
+	    valores_antes    JSONB,
+
+
+	    valores_despues  JSONB
+
+
+	);
+
+2026-11-08 21:47:26.108 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 21:47:30.592 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 41 búfers (0.3%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=4.467 s, sync=0.012 s, total=4.484 s; archivos sincronizados=40, más largo=0.001 s, promedio=0.001 s; distancia=201 kB, estimación=1108 kB; lsn=0/23451B8, lsn de redo=0/2345128
+
+2026-11-08 21:48:52.718 CST [39128] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=50666
+
+2026-11-08 21:48:52.727 CST [39128] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 21:48:52.727 CST [39128] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=pgAdmin 4 - CONN:9478333
+
+2026-11-08 21:49:06.936 CST [39128] user=postgres db=bitacora app=pgAdmin 4 - CONN:9478333 client=::1 LOG:  statement: CREATE OR REPLACE FUNCTION auditoria.registrar_cambio_cliente()
+
+
+	RETURNS trigger
+
+
+	LANGUAGE plpgsql
+
+
+	SECURITY DEFINER
+
+
+	SET search_path = pg_catalog, public
+
+
+	AS $$
+
+
+	BEGIN
+
+
+	    IF TG_OP = 'INSERT' THEN
+
+
+	        INSERT INTO auditoria.cambios_clientes (operacion, id_cliente, valores_despues)
+
+
+	        VALUES (TG_OP, NEW.id, to_jsonb(NEW));
+
+
+	        RETURN NEW;
+
+
+	    ELSIF TG_OP = 'UPDATE' THEN
+
+
+	        INSERT INTO auditoria.cambios_clientes (operacion, id_cliente, valores_antes, valores_despues)
+
+
+	        VALUES (TG_OP, NEW.id, to_jsonb(OLD), to_jsonb(NEW));
+
+
+	        RETURN NEW;
+
+
+	    ELSIF TG_OP = 'DELETE' THEN
+
+
+	        INSERT INTO auditoria.cambios_clientes (operacion, id_cliente, valores_antes)
+
+
+	        VALUES (TG_OP, OLD.id, to_jsonb(OLD));
+
+
+	        RETURN OLD;
+
+
+	    END IF;
+
+
+	    RETURN NULL;
+
+
+	END;
+
+
+	$$;
+
+2026-11-08 21:49:10.591 CST [39128] user=postgres db=bitacora app=pgAdmin 4 - CONN:9478333 client=::1 LOG:  statement: REVOKE ALL ON FUNCTION auditoria.registrar_cambio_cliente() FROM PUBLIC;
+
+
+	
+
+2026-11-08 21:49:16.176 CST [39128] user=postgres db=bitacora app=pgAdmin 4 - CONN:9478333 client=::1 LOG:  statement: CREATE TRIGGER trg_auditoria_clientes
+
+
+	AFTER INSERT OR UPDATE OR DELETE ON clientes
+
+
+	FOR EACH ROW EXECUTE FUNCTION auditoria.registrar_cambio_cliente();
+
+2026-11-08 21:52:26.603 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 21:52:29.654 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 28 búfers (0.2%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.041 s, sync=0.007 s, total=3.052 s; archivos sincronizados=18, más largo=0.001 s, promedio=0.001 s; distancia=138 kB, estimación=1011 kB; lsn=0/2367BA8, lsn de redo=0/2367B50
+
+2026-11-08 21:54:11.383 CST [31820] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63481
+
+2026-11-08 21:54:11.394 CST [31820] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 21:54:11.394 CST [31820] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=pgAdmin 4 - CONN:4361009
+
+2026-11-08 21:55:22.853 CST [43200] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=59785
+
+2026-11-08 21:55:25.623 CST [42072] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=52222
+
+2026-11-08 21:55:25.634 CST [42072] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 21:55:25.634 CST [42072] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=bitacora nombre_de_aplicación=app-ventas-web
+
+2026-11-08 21:55:25.637 CST [42072] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  sentencia: UPDATE clientes SET rfc = 'GAMA780912ZZZ' WHERE id = 3
+
+2026-11-08 21:55:25.640 CST [42072] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.028 usuario=app_ventas base=bitacora host=127.0.0.1 port=52222
+
+2026-11-08 21:56:11.270 CST [15028] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=54825
+
+2026-11-08 21:56:13.889 CST [43892] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=54826
+
+2026-11-08 21:56:13.900 CST [43892] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 21:56:13.900 CST [43892] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=bitacora nombre_de_aplicación=psql
+
+2026-11-08 21:56:13.903 CST [43892] user=app_ventas db=bitacora app=psql client=127.0.0.1 ERROR:  permiso denegado al esquema auditoria en carÃ¡cter 15
+
+2026-11-08 21:56:13.903 CST [43892] user=app_ventas db=bitacora app=psql client=127.0.0.1 SENTENCIA:  SELECT * FROM auditoria.cambios_clientes
+
+2026-11-08 21:56:13.905 CST [43892] user=app_ventas db=bitacora app=psql client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.027 usuario=app_ventas base=bitacora host=127.0.0.1 port=54826
+
+2026-11-08 21:56:56.287 CST [31820] user=postgres db=bitacora app=pgAdmin 4 - CONN:4361009 client=::1 ERROR:  syntax error at or near "\" at character 1
+
+2026-11-08 21:56:56.287 CST [31820] user=postgres db=bitacora app=pgAdmin 4 - CONN:4361009 client=::1 STATEMENT:  \x
+
+
+	SELECT id_evento, momento, usuario_sesion, usuario_efectivo, aplicacion, ip_cliente, operacion, id_cliente
+
+
+	FROM auditoria.cambios_clientes ORDER BY id_evento;
+
+
+	\x
+
+2026-11-08 21:57:26.655 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 21:57:27.530 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 8 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.867 s, sync=0.004 s, total=0.875 s; archivos sincronizados=8, más largo=0.001 s, promedio=0.001 s; distancia=12 kB, estimación=911 kB; lsn=0/236AD90, lsn de redo=0/236AD38
+
+2026-11-08 21:58:29.260 CST [42152] user=postgres db=bitacora app=psql client=127.0.0.1 ERROR:  error de sintaxis en o cerca de Â«psqlÂ» en carÃ¡cter 1
+
+2026-11-08 21:58:29.260 CST [42152] user=postgres db=bitacora app=psql client=127.0.0.1 SENTENCIA:  psql "postgresql://app_ventas:incorrecta@127.0.0.1/comercial" -c "SELECT 1"
+
+	:
+
+	;
+
+2026-11-08 22:01:46.162 CST [35992] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63904
+
+2026-11-08 22:01:50.805 CST [20860] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=54977
+
+2026-11-08 22:01:50.817 CST [20860] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 22:01:50.817 CST [20860] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=psql
+
+2026-11-08 22:01:50.858 CST [20860] user=postgres db=bitacora app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.064 usuario=postgres base=bitacora host=::1 port=54977
+
+2026-11-08 22:02:26.533 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 22:02:26.754 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.215 s, sync=0.002 s, total=0.221 s; archivos sincronizados=2, más largo=0.001 s, promedio=0.001 s; distancia=8 kB, estimación=821 kB; lsn=0/236CEA8, lsn de redo=0/236CE50
+
+2026-11-08 22:04:32.984 CST [43648] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52065
+
+2026-11-08 22:04:32.995 CST [43648] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 22:04:32.995 CST [43648] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=pgAdmin 4 - CONN:7403935
+
+2026-11-08 22:05:02.348 CST [43648] user=postgres db=bitacora app=pgAdmin 4 - CONN:7403935 client=::1 LOG:  statement: INSERT INTO clientes (nombre, correo, rfc, edad, ciudad, codigo_postal)
+
+
+	VALUES ('Pedro Ruiz', 'pedro.ruiz@example.test', 'RUPE950101AAA', 30, 'Guasave', '81000');
+
+
+	DELETE FROM clientes WHERE nombre = 'Pedro Ruiz';
+
+2026-11-08 22:05:24.485 CST [43648] user=postgres db=bitacora app=pgAdmin 4 - CONN:7403935 client=::1 LOG:  statement: INSERT INTO clientes (nombre, correo, rfc, edad, ciudad, codigo_postal)
+
+
+	VALUES ('Pedro Ruiz', 'pedro.ruiz@example.test', 'RUPE950101AAA', 30, 'Guasave', '81000');
+
+2026-11-08 22:05:28.101 CST [43648] user=postgres db=bitacora app=pgAdmin 4 - CONN:7403935 client=::1 LOG:  statement: DELETE FROM clientes WHERE nombre = 'Pedro Ruiz';
+
+
+	
+
+2026-11-08 22:07:26.756 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 22:07:27.415 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 6 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.651 s, sync=0.003 s, total=0.660 s; archivos sincronizados=7, más largo=0.001 s, promedio=0.001 s; distancia=5 kB, estimación=739 kB; lsn=0/236E400, lsn de redo=0/236E3A8
+
+2026-11-08 22:08:41.656 CST [37520] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=63944
+
+2026-11-08 22:08:44.417 CST [9892] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=63945
+
+2026-11-08 22:08:44.428 CST [9892] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«app_ventas» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 22:08:44.428 CST [9892] user=app_ventas db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=app_ventas base_de_datos=bitacora nombre_de_aplicación=app-ventas-web
+
+2026-11-08 22:08:44.431 CST [9892] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  sentencia: DELETE FROM auditoria.cambios_clientes
+
+2026-11-08 22:08:44.431 CST [9892] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 ERROR:  permiso denegado al esquema auditoria en carÃ¡cter 13
+
+2026-11-08 22:08:44.431 CST [9892] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 SENTENCIA:  DELETE FROM auditoria.cambios_clientes
+
+2026-11-08 22:08:44.433 CST [9892] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  sentencia: ALTER TABLE clientes DISABLE TRIGGER trg_auditoria_clientes
+
+2026-11-08 22:08:44.433 CST [9892] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 ERROR:  debe ser dueÃ±o de la tabla clientes
+
+2026-11-08 22:08:44.433 CST [9892] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 SENTENCIA:  ALTER TABLE clientes DISABLE TRIGGER trg_auditoria_clientes
+
+2026-11-08 22:08:44.434 CST [9892] user=app_ventas db=bitacora app=app-ventas-web client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.028 usuario=app_ventas base=bitacora host=127.0.0.1 port=63945
+
+2026-11-08 22:08:58.881 CST [43648] user=postgres db=bitacora app=pgAdmin 4 - CONN:7403935 client=::1 LOG:  statement: ALTER TABLE clientes DISABLE TRIGGER trg_auditoria_clientes;
+
+
+	UPDATE clientes SET rfc = 'GAMA780912GHI' WHERE id = 3;
+
+2026-11-08 22:09:02.506 CST [43648] user=postgres db=bitacora app=pgAdmin 4 - CONN:7403935 client=::1 LOG:  statement: ALTER TABLE clientes ENABLE TRIGGER trg_auditoria_clientes;
+
+
+	
+
+2026-11-08 22:10:20.383 CST [43648] user=postgres db=bitacora app=pgAdmin 4 - CONN:7403935 client=::1 LOG:  statement: ALTER TABLE clientes DISABLE TRIGGER trg_auditoria_clientes;
+
+
+	UPDATE clientes SET rfc = 'GAMA780912GHI' WHERE id = 3;
+
+
+	ALTER TABLE clientes ENABLE TRIGGER trg_auditoria_clientes;
+
+
+	SELECT count(*) FROM auditoria.cambios_clientes;
+
+2026-11-08 22:12:26.430 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 22:12:26.649 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.214 s, sync=0.002 s, total=0.220 s; archivos sincronizados=3, más largo=0.001 s, promedio=0.001 s; distancia=3 kB, estimación=666 kB; lsn=0/236F060, lsn de redo=0/236F008
+
+2026-11-08 22:12:50.195 CST [41260] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=54677
+
+2026-11-08 22:12:53.406 CST [38528] user=[desconocido] db=[desconocido] app=[desconocido] client=127.0.0.1 LOG:  conexión recibida: host=127.0.0.1 port=49834
+
+2026-11-08 22:12:53.417 CST [38528] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autenticada: identidad=«soporte_ana» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:115)
+
+2026-11-08 22:12:53.417 CST [38528] user=soporte_ana db=bitacora app=[desconocido] client=127.0.0.1 LOG:  conexión autorizada: usuario=soporte_ana base_de_datos=bitacora nombre_de_aplicación=psql
+
+2026-11-08 22:12:53.456 CST [38528] user=soporte_ana db=bitacora app=psql client=127.0.0.1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.061 usuario=soporte_ana base=bitacora host=127.0.0.1 port=49834
+
+2026-11-08 22:13:10.756 CST [40236] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=63807
+
+2026-11-08 22:13:10.766 CST [40236] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 22:13:10.766 CST [40236] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=pgAdmin 4 - CONN:4557779
+
+2026-11-08 22:13:15.452 CST [40236] user=postgres db=bitacora app=pgAdmin 4 - CONN:4557779 client=::1 LOG:  statement: UPDATE clientes SET segmento = 'regular';
+
+
+	
+
+2026-11-08 22:17:26.661 CST [7556] user= db= app= client= LOG:  empezando checkpoint: time
+
+2026-11-08 22:17:27.213 CST [7556] user= db= app= client= LOG:  checkpoint completo: escritos 5 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.546 s, sync=0.003 s, total=0.553 s; archivos sincronizados=6, más largo=0.001 s, promedio=0.001 s; distancia=9 kB, estimación=600 kB; lsn=0/23716F0, lsn de redo=0/2371698
+
+2026-11-08 22:19:49.242 CST [17808] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=50597
+
+2026-11-08 22:20:08.773 CST [30380] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=57673
+
+2026-11-08 22:20:08.784 CST [30380] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 22:20:08.784 CST [30380] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=psql
+
+2026-11-08 22:20:08.787 CST [30380] user=postgres db=bitacora app=psql client=::1 ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xfa
+
+2026-11-08 22:20:08.787 CST [30380] user=postgres db=bitacora app=psql client=::1 SENTENCIA:  SELECT replace(pg_read_file(pg_current_logfile()), '<REDACTED>', '<REDACTED>')
+
+2026-11-08 22:20:08.788 CST [30380] user=postgres db=bitacora app=psql client=::1 LOG:  desconexiÃ³n: duraciÃ³n de sesiÃ³n: 0:00:00.026 usuario=postgres base=bitacora host=::1 port=57673
+
+2026-11-08 22:21:02.091 CST [42736] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52227
+
+2026-11-08 22:21:06.010 CST [3996] user=[desconocido] db=[desconocido] app=[desconocido] client=::1 LOG:  conexión recibida: host=::1 port=52228
+
+2026-11-08 22:21:06.022 CST [3996] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autenticada: identidad=«postgres» método=scram-sha-256 (C:/Program Files/PostgreSQL/18/data/pg_hba.conf:117)
+
+2026-11-08 22:21:06.022 CST [3996] user=postgres db=bitacora app=[desconocido] client=::1 LOG:  conexión autorizada: usuario=postgres base_de_datos=bitacora nombre_de_aplicación=psql
+
+
