@@ -1,0 +1,7 @@
+   grantee   | table_schema | table_name |       privilegios       
+-------------+--------------+------------+-------------------------
+ app_ventas  | public       | clientes   | SELECT, UPDATE
+ soporte_ana | dba          | bitacora   | SELECT
+ soporte_ana | public       | clientes   | SELECT, TRIGGER, UPDATE
+(3 filas)
+
