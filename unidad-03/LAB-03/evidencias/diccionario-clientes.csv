@@ -1,0 +1,11 @@
+columna,tipo,longitud,acepta_nulos,descripcion
+id,bigint,,NO,Identificador interno del cliente. Generado por el sistema.
+nombre,character varying,120,NO,Nombre completo. Dato personal identificador directo.
+correo,character varying,150,NO,Correo de contacto. Dato personal. Uso: notificaciones al cliente.
+telefono,character varying,20,YES,Teléfono de contacto del cliente. Dato personal. Finalidad: contacto directo y atención. Responsable: Atención al cliente. Acceso enmascarado para usuarios no autorizados.
+rfc,character varying,13,YES,RFC del cliente. Dato personal. Uso: facturación. Cambios auditados en auditoria.cambios_clientes.
+edad,integer,,YES,Edad en años cumplidos. Dato personal. Uso: analítica agregada.
+ciudad,character varying,80,YES,Ciudad de residencia del cliente. Finalidad: análisis geográfico y logística. Responsable: Analítica. Se generaliza (zona o estado) en vistas de analítica.
+codigo_postal,character varying,10,YES,Código postal del cliente. Finalidad: envíos y análisis regional. Responsable: Analítica. Se generaliza (solo primeros dígitos) en vistas de analítica.
+fecha_alta,date,,YES,Fecha de alta del cliente. Se asigna automáticamente con CURRENT_DATE. Base para calcular el plazo de retención (5 años).
+segmento,character varying,20,YES,Segmento comercial del cliente (VARCHAR(20)). Finalidad: segmentación y análisis comercial. Responsable: Gerencia Comercial. Valor definido por el negocio.
