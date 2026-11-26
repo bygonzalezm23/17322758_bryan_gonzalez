@@ -1,0 +1,14 @@
+ id_evento |            momento            | usuario_sesion |        aplicacion        | operacion | id_cliente 
+-----------+-------------------------------+----------------+--------------------------+-----------+------------
+        30 | 2026-11-25 11:08:42.419245-07 | postgres       | pgAdmin 4 - CONN:6116857 | INSERT    |          8
+        29 | 2026-11-25 11:08:42.419245-07 | postgres       | pgAdmin 4 - CONN:6116857 | INSERT    |          7
+        28 | 2026-11-25 11:03:12.03546-07  | postgres       | pgAdmin 4 - CONN:7394430 | UPDATE    |          3
+        27 | 2026-11-25 11:03:12.03546-07  | postgres       | pgAdmin 4 - CONN:7394430 | UPDATE    |          5
+        26 | 2026-11-25 11:03:12.03546-07  | postgres       | pgAdmin 4 - CONN:7394430 | UPDATE    |          4
+        25 | 2026-11-25 11:03:12.03546-07  | postgres       | pgAdmin 4 - CONN:7394430 | UPDATE    |          2
+        24 | 2026-11-25 11:03:12.03546-07  | postgres       | pgAdmin 4 - CONN:7394430 | UPDATE    |          1
+        23 | 2026-11-25 11:02:45.528606-07 | soporte_ana    | pgAdmin 4 - CONN:7394430 | UPDATE    |          3
+        22 | 2026-11-25 11:02:45.528606-07 | soporte_ana    | pgAdmin 4 - CONN:7394430 | UPDATE    |          5
+        21 | 2026-11-25 11:02:45.528606-07 | soporte_ana    | pgAdmin 4 - CONN:7394430 | UPDATE    |          4
+(10 filas)
+
